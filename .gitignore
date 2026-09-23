@@ -5,6 +5,8 @@
 .idea/
 *.iml
 .metadata/
+# Ignorar arquivos de backup
+*.bak
 # Ignorar pastas de build e dependências locais
 bin/
 target/
