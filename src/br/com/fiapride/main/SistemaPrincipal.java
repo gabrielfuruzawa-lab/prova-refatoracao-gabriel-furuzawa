@@ -12,23 +12,23 @@ public class SistemaPrincipal {
         System.out.println("\n--- Status do Veículo ---");
         System.out.println("Motorista: " + veiculo1.getMotorista() + 
                            " | Placa: " + veiculo1.getPlaca() + 
-                           " | Gasolina: " + veiculo1.getGasolina() + "L");
+                           " | Gasolina: " + veiculo1.getLitrosGasolina() + "L");
 
         System.out.println("\n>>> Tentando adicionar valor negativo:");
-        veiculo1.adicionarGasolina(-10); 
+        veiculo1.abastecer(-10); 
 
         System.out.println("\n>>> Adicionando gasolina corretamente:");
-        veiculo1.adicionarGasolina(50); 
+        veiculo1.abastecer(50); 
 
         System.out.println("\n>>> Tentando gastar mais do que tem no tanque:");
-        veiculo1.gastarGasolina(100);
+        veiculo1.consumirCombustivel(100);
 
         System.out.println("\n>>> Gastando gasolina corretamente:");
-        veiculo1.gastarGasolina(20); 
+        veiculo1.consumirCombustivel(20); 
 
         System.out.println("\n--- Status do Veículo ---");
         System.out.println("Motorista: " + veiculo1.getMotorista() + 
                            " | Placa: " + veiculo1.getPlaca() + 
-                           " | Gasolina: " + veiculo1.getGasolina() + "L");
+                           " | Gasolina: " + veiculo1.getLitrosGasolina() + "L");
     }
 }
